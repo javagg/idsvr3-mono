@@ -46,11 +46,11 @@ namespace Microsoft.AspNet.Builder
                         adminApp.UseIdentityManager(adminOptions);
                     });
 
-                    var idSvrFactory = Factory.Configure();
-                    idSvrFactory.ConfigureUserService("AspId");                    
-                    
-                    builder.UseIdentityServer(options);
+                    options.Factory.ConfigureUserService("AspId");
 
+                    builder.Map("/core", core => {
+                        core.UseIdentityServer(options);
+                    });
                     var appFunc = builder.Build(typeof(Func<IDictionary<string, object>, Task>)) as Func<IDictionary<string, object>, Task>;
                     return appFunc;
                 });

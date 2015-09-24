@@ -1,11 +1,13 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2012
-VisualStudioVersion = 12.0.30501.0
+# Visual Studio 14
+VisualStudioVersion = 14.0.23107.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SelfHost", "SelfHost\SelfHost.csproj", "{F0B58CB4-548B-4934-84D3-8003160FF046}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{8B320F4B-94A4-4C37-9D68-262599C7379F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AspNetIdentity", "AspNetIdentity\AspNetIdentity.csproj", "{87CE0177-5E2B-4452-A6D5-4E71F1D5534C}"
+Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "Asp5AspId", "src\Asp5AspId\Asp5AspId.xproj", "{A7612A1D-CB85-4010-AB77-5FA8DC43C8B5}"
+EndProject
+Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "WebApplication1", "src\WebApplication1\WebApplication1.xproj", "{24CDCA52-143F-4EA4-BAA3-C64EC31AD53E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -13,27 +15,33 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{87CE0177-5E2B-4452-A6D5-4E71F1D5534C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{87CE0177-5E2B-4452-A6D5-4E71F1D5534C}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{87CE0177-5E2B-4452-A6D5-4E71F1D5534C}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{87CE0177-5E2B-4452-A6D5-4E71F1D5534C}.Release|Any CPU.Build.0 = Release|Any CPU
-		{F0B58CB4-548B-4934-84D3-8003160FF046}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{F0B58CB4-548B-4934-84D3-8003160FF046}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{F0B58CB4-548B-4934-84D3-8003160FF046}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{F0B58CB4-548B-4934-84D3-8003160FF046}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A7612A1D-CB85-4010-AB77-5FA8DC43C8B5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A7612A1D-CB85-4010-AB77-5FA8DC43C8B5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A7612A1D-CB85-4010-AB77-5FA8DC43C8B5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A7612A1D-CB85-4010-AB77-5FA8DC43C8B5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{24CDCA52-143F-4EA4-BAA3-C64EC31AD53E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{24CDCA52-143F-4EA4-BAA3-C64EC31AD53E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{24CDCA52-143F-4EA4-BAA3-C64EC31AD53E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{24CDCA52-143F-4EA4-BAA3-C64EC31AD53E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{A7612A1D-CB85-4010-AB77-5FA8DC43C8B5} = {8B320F4B-94A4-4C37-9D68-262599C7379F}
+		{24CDCA52-143F-4EA4-BAA3-C64EC31AD53E} = {8B320F4B-94A4-4C37-9D68-262599C7379F}
 	EndGlobalSection
 	GlobalSection(MonoDevelopProperties) = preSolution
 		Policies = $0
 		$0.DotNetNamingPolicy = $1
 		$1.DirectoryNamespaceAssociation = None
 		$1.ResourceNamePolicy = FileFormatDefault
-		$0.TextStylePolicy = $2
+		$0.TextStylePolicy = $3
 		$2.FileWidth = 120
 		$2.TabsToSpaces = False
 		$2.inheritsSet = VisualStudio
 		$2.inheritsScope = text/plain
 		$2.scope = text/plain
-		$0.TextStylePolicy = $3
 		$3.FileWidth = 120
 		$3.TabWidth = 2
 		$3.IndentWidth = 2
@@ -43,8 +51,5 @@ Global
 		$0.XmlFormattingPolicy = $4
 		$4.inheritsSet = null
 		$4.scope = application/config+xml
-	EndGlobalSection
-	GlobalSection(SolutionProperties) = preSolution
-		HideSolutionNode = FALSE
 	EndGlobalSection
 EndGlobal

@@ -33,8 +33,8 @@ namespace Asp5AspId.IdSvr
             var factory = new IdentityServerServiceFactory();
             factory
                 .UseInMemoryClients(Clients.Get())
-                .UseInMemoryScopes(Scopes.Get())
-                .UseInMemoryUsers(Users.Get());
+                .UseInMemoryScopes(Scopes.Get());
+            //    .UseInMemoryUsers(Users.Get());
             factory.CorsPolicyService = new Registration<ICorsPolicyService>(new DefaultCorsPolicyService { AllowAll = true });
 
             return factory;
