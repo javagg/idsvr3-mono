@@ -111,12 +111,13 @@
     <Reference Include="Microsoft.Owin.StaticFiles">
       <HintPath>..\packages\Microsoft.Owin.StaticFiles.3.0.1\lib\net45\Microsoft.Owin.StaticFiles.dll</HintPath>
     </Reference>
-    <Reference Include="System.Web.Razor">
-      <HintPath>..\packages\RazorMachine.2.6.1\lib\net40\System.Web.Razor.dll</HintPath>
-    </Reference>
     <Reference Include="Xipton.Razor">
       <HintPath>..\packages\RazorMachine.2.6.1\lib\net40\Xipton.Razor.dll</HintPath>
     </Reference>
+    <Reference Include="System.Web.Razor">
+      <HintPath>..\packages\Microsoft.AspNet.Razor.3.2.3\lib\net45\System.Web.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Controllers\HomeController.cs" />
