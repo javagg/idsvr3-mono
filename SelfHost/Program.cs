@@ -16,7 +16,7 @@ namespace SelfHost
                 .LiterateConsole(outputTemplate: "{Timestamp:HH:MM} [{Level}] ({Name:l}){NewLine} {Message}{NewLine}{Exception}")
                 .CreateLogger();
 
-            const string url = "http://+:44000/core";
+            const string url = "http://+:44002/core";
             using (WebApp.Start<Startup>(url))
             {
                 Console.WriteLine("\n\nServer listening at {0}. Press enter to stop", url);
